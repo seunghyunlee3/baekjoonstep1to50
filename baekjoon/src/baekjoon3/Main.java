@@ -1,15 +1,17 @@
 package baekjoon3;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
 
-		int n = sc.nextInt();
-
-		for (int i = 1; i <= 9; i++) {
-			System.out.println(n + " * " + i + " = " + n * i);
+		for (int i = 0; i < T; i++) {
+			int A = Integer.parseInt(br.readLine());
+			int B = Integer.parseInt(br.readLine());
+			System.out.println(A + B);
 		}
 	}
 }
